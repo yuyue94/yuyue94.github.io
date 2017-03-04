@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>cooltag的魔力小站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="BOM标签（空格分隔）：javascript 
+
+window对象全局作用域
+全局变量不能通过delete操作符删除，而直接在window对象上定义的属性可以
+12var age = 12; // [[configurable]]为false，不能deletewindow.color = &apos;red&apos;; // 可以delete
+
+使用未声明的变量会报错，通过window查询的未声明变量不会报错，而是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cooltag的魔力小站">
+<meta property="og:url" content="http://cooltag.com/2017/03/04/BOM/index.html">
+<meta property="og:site_name" content="cooltag的魔力小站">
+<meta property="og:description" content="BOM标签（空格分隔）：javascript 
+
+window对象全局作用域
+全局变量不能通过delete操作符删除，而直接在window对象上定义的属性可以
+12var age = 12; // [[configurable]]为false，不能deletewindow.color = &apos;red&apos;; // 可以delete
+
+使用未声明的变量会报错，通过window查询的未声明变量不会报错，而是">
+<meta property="og:updated_time" content="2017-03-04T12:59:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cooltag的魔力小站">
+<meta name="twitter:description" content="BOM标签（空格分隔）：javascript 
+
+window对象全局作用域
+全局变量不能通过delete操作符删除，而直接在window对象上定义的属性可以
+12var age = 12; // [[configurable]]为false，不能deletewindow.color = &apos;red&apos;; // 可以delete
+
+使用未声明的变量会报错，通过window查询的未声明变量不会报错，而是">
+  
+    <link rel="alternate" href="/atom.xml" title="cooltag的魔力小站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cooltag的魔力小站</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://cooltag.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-BOM" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/04/BOM/" class="article-date">
+  <time datetime="2017-03-04T12:59:41.000Z" itemprop="datePublished">2017-03-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="BOM"><a href="#BOM" class="headerlink" title="BOM"></a>BOM</h1><p>标签（空格分隔）：javascript </p>
+<hr>
+<h2 id="window对象"><a href="#window对象" class="headerlink" title="window对象"></a>window对象</h2><h3 id="全局作用域"><a href="#全局作用域" class="headerlink" title="全局作用域"></a>全局作用域</h3><ul>
+<li><p>全局变量不能通过delete操作符删除，而直接在window对象上定义的属性可以</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> age = <span class="number">12</span>; <span class="comment">// [[configurable]]为false，不能delete</span></div><div class="line"><span class="built_in">window</span>.color = <span class="string">'red'</span>; <span class="comment">// 可以delete</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>使用未声明的变量会报错，通过window查询的未声明变量不会报错，而是返回undefined</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> newValue = oldValue; <span class="comment">// 未声明，报错</span></div><div class="line"><span class="keyword">var</span> newValue = <span class="built_in">window</span>.oldValue; <span class="comment">// undefined</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="窗口关系和框架"><a href="#窗口关系和框架" class="headerlink" title="窗口关系和框架"></a>窗口关系和框架</h3><ul>
+<li>top对象始终指向最外层的浏览器窗口</li>
+<li>parent对象只想当前框架的直接上层框架，在没有框架时parent一定等于top</li>
+</ul>
+<h3 id="窗口位置"><a href="#窗口位置" class="headerlink" title="窗口位置"></a>窗口位置</h3><ul>
+<li>screenLeft(screenX),screenRight(screenY)</li>
+<li>moveTo(100,100)，移动到绝对位置</li>
+<li>moveBy(0,100)，向下移动100px</li>
+</ul>
+<h3 id="窗口大小"><a href="#窗口大小" class="headerlink" title="窗口大小"></a>窗口大小</h3><ul>
+<li>outerWidth/outerHeight（电脑本身的宽和高，分辨率）</li>
+<li>innerWidth/innerHeight（视口的宽度和高度）</li>
+<li>document.documentElement.clientWidth/document.docuemtElement.clientHeight（视口的宽度和高度）</li>
+<li></li>
+<li>resizeTo/resizeBy</li>
+<li></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://cooltag.com/2017/03/04/BOM/" data-id="cizvaop790000a4wviytbudi2" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/03/04/javascript高级程序设计（7-2）-——-模仿块级作用域/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/04/BOM/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-2）-——-模仿块级作用域/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-1）——-递归、闭包/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-2）——-继承/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-1）——-理解对象、创建对象/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 cooltag<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

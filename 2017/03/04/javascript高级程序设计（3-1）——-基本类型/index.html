@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>cooltag的魔力小站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="javascript高级程序设计（3.1）—— 基本类型标签（空格分隔）：javascript 
+
+拾遗typeof操作符
+可能的值
+“undefined” – 这个值没有定义
+“boolean” – 这个值是布尔值
+“string” – 这个值是字符串
+“number” – 这个值是数值
+“object” – 这个值是对象或者null
+“function” – 这个值是函数
+
+
+typeof是操">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cooltag的魔力小站">
+<meta property="og:url" content="http://cooltag.com/2017/03/04/javascript高级程序设计（3-1）——-基本类型/index.html">
+<meta property="og:site_name" content="cooltag的魔力小站">
+<meta property="og:description" content="javascript高级程序设计（3.1）—— 基本类型标签（空格分隔）：javascript 
+
+拾遗typeof操作符
+可能的值
+“undefined” – 这个值没有定义
+“boolean” – 这个值是布尔值
+“string” – 这个值是字符串
+“number” – 这个值是数值
+“object” – 这个值是对象或者null
+“function” – 这个值是函数
+
+
+typeof是操">
+<meta property="og:updated_time" content="2017-03-04T12:58:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cooltag的魔力小站">
+<meta name="twitter:description" content="javascript高级程序设计（3.1）—— 基本类型标签（空格分隔）：javascript 
+
+拾遗typeof操作符
+可能的值
+“undefined” – 这个值没有定义
+“boolean” – 这个值是布尔值
+“string” – 这个值是字符串
+“number” – 这个值是数值
+“object” – 这个值是对象或者null
+“function” – 这个值是函数
+
+
+typeof是操">
+  
+    <link rel="alternate" href="/atom.xml" title="cooltag的魔力小站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cooltag的魔力小站</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://cooltag.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-javascript高级程序设计（3-1）——-基本类型" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/04/javascript高级程序设计（3-1）——-基本类型/" class="article-date">
+  <time datetime="2017-03-04T12:58:15.000Z" itemprop="datePublished">2017-03-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="javascript高级程序设计（3-1）——-基本类型"><a href="#javascript高级程序设计（3-1）——-基本类型" class="headerlink" title="javascript高级程序设计（3.1）—— 基本类型"></a>javascript高级程序设计（3.1）—— 基本类型</h1><p>标签（空格分隔）：javascript </p>
+<hr>
+<h2 id="拾遗"><a href="#拾遗" class="headerlink" title="拾遗"></a>拾遗</h2><h3 id="typeof操作符"><a href="#typeof操作符" class="headerlink" title="typeof操作符"></a>typeof操作符</h3><ul>
+<li>可能的值<ul>
+<li>“undefined” – 这个值没有定义</li>
+<li>“boolean” – 这个值是布尔值</li>
+<li>“string” – 这个值是字符串</li>
+<li>“number” – 这个值是数值</li>
+<li><strong>“object” – 这个值是对象或者null</strong></li>
+<li>“function” – 这个值是函数</li>
+</ul>
+</li>
+<li>typeof是操作符不是函数</li>
+</ul>
+<h3 id="布尔型"><a href="#布尔型" class="headerlink" title="布尔型"></a>布尔型</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="literal">null</span> == <span class="literal">undefined</span>; <span class="comment">//true</span></div><div class="line"><span class="literal">null</span> === <span class="literal">undefined</span>; <span class="comment">//false</span></div><div class="line"><span class="string">''</span> == <span class="literal">false</span>; <span class="comment">//true</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> o = &#123;&#125;;</div><div class="line">o == <span class="literal">false</span>; <span class="comment">//false</span></div><div class="line"><span class="keyword">var</span> l = [];</div><div class="line">l == <span class="literal">false</span>; <span class="comment">//true</span></div><div class="line"><span class="comment">// 在进行数组直接与true和false的布尔类型比较时，默认是将数组和布尔类型都转化为了Number类型进行比较，空数组转化为Number类型时为0。</span></div><div class="line"></div><div class="line"><span class="keyword">if</span>(o)&#123; <span class="comment">// true</span></div><div class="line">    <span class="comment">// 里面执行</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'yes'</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">if</span>(l)&#123; <span class="comment">// true</span></div><div class="line">    <span class="comment">// 里面执行</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'yes'</span>)</div><div class="line">    <span class="comment">// l是一个Object对象，所以if(l)时是true。</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Number类型"><a href="#Number类型" class="headerlink" title="Number类型"></a>Number类型</h3><ul>
+<li>浮点数值最高精度是17位小数</li>
+<li><p>不要测试某个特定的浮点数值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="number">0.1</span>;</div><div class="line"><span class="keyword">var</span> b = <span class="number">0.2</span>;</div><div class="line">a + b == <span class="number">0.3</span> <span class="comment">// false; a + b 结果等于0.30000000000000004</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>正无穷和负无穷</p>
+<ul>
+<li>Number.MAX_VALUE 和 Number.MIN_VALUE 是js保存的最大值和最小值</li>
+<li>超过以上范围的会转换为Infinity（正无穷）和-Infinity（负无穷），判断是否有穷可以用isFinite()函数</li>
+<li>Number.POSITIVE_INFINITY和Number.NEGATIVE_INFINITY可以获取到Infinity和-Infinity</li>
+</ul>
+</li>
+<li>NaN<ul>
+<li>Not a Number，用于表示本来要返回数值的操作数未返回数值的情况</li>
+<li>任何涉及NaN的操作都会返回NaN，NaN与任何值都不相等，包括它自己（NaN == NaN // false）</li>
+</ul>
+</li>
+<li><p>isNaN()，主要是判定一个值是否能转为确切的数值</p>
+<ul>
+<li>isNaN()函数，在接收一个值之后，会尝试将这个值转为数值，如果不能转则返回true</li>
+<li>isNaN()作用于对象时，会首先调用对象valueOf()方法，然后确定该方法返回的值是否可以转换为数值。如果不能,再基于valueOf()的返回值调用toString()方法，再测试返回值<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">isNaN(NaN); //true </div><div class="line">isNaN(10); //false （10是一个数值）</div><div class="line">isNaN(&quot;10&quot;); //false（&quot;10&quot;可以被转换成数值10）</div><div class="line">isNaN(&quot;blue&quot;); //true （不能转换成数值） </div><div class="line">isNaN(true); //false （可以被转换成数值1）</div><div class="line">isNaN(&apos;123uuu&apos;); //true（不能被Number()转化为数值）</div><div class="line">isNaN(new Date()); //false （可以转换为百万毫秒的时间）</div><div class="line">isNaN(new Date().toString()); //true （转化为string后就不行了）</div><div class="line"></div><div class="line">isNaN(x) == isNaN(Number(x)) </div><div class="line">// true for every value of x, including x == undefined,</div><div class="line">// because isNaN(undefined) == true and Number(undefined) returns NaN,</div><div class="line">                             // but ...</div><div class="line">isNaN() == isNaN(Number())   </div><div class="line">// false, because isNaN() == true and Number() == 0</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>Number.isNaN()，es6，判定这个值是不是NaN，所有不是NaN的都是false</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Number</span>.isNaN(<span class="literal">NaN</span>); <span class="comment">//true</span></div><div class="line"><span class="built_in">Number</span>.isNaN(<span class="built_in">Number</span>.NaN) <span class="comment">//true</span></div><div class="line"><span class="built_in">Number</span>.isNaN(<span class="number">0</span>/<span class="number">0</span>) <span class="comment">//true</span></div><div class="line"></div><div class="line"><span class="built_in">Number</span>.isNaN(<span class="string">'NaN'</span>); <span class="comment">//false,是字符串不是NaN</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Number.isNaN()的Polyfill（腻子脚本）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Number</span>.isNaN = <span class="built_in">Number</span>.isNaN || <span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">typeof</span> value === <span class="string">"number"</span> &amp;&amp; <span class="built_in">isNaN</span>(value);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Or</span></div><div class="line"><span class="built_in">Number</span>.isNaN = <span class="built_in">Number</span>.isNaN || <span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;     </div><div class="line">    <span class="keyword">return</span> value !== value;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>参考资料：（来自MDN）<br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN" target="_blank" rel="external">isNaN()</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN" target="_blank" rel="external">Number.isNaN()</a></p>
+<ul>
+<li><p>Number()，等同于一元加操作符</p>
+<ul>
+<li>在面对字符串时，必须保证字符串一定是个数字才能被转化，不存在提取数字的情况 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">Number</span>(<span class="literal">true</span>) = <span class="number">1</span>;</div><div class="line"><span class="built_in">Number</span>(<span class="literal">false</span>) = <span class="number">0</span>;</div><div class="line"></div><div class="line"><span class="built_in">Number</span>(<span class="literal">null</span>) = <span class="number">0</span>;</div><div class="line"><span class="built_in">Number</span>(<span class="literal">undefined</span>) = <span class="literal">NaN</span>;</div><div class="line"></div><div class="line"><span class="built_in">Number</span>(&#123;&#125;) = <span class="literal">NaN</span>;</div><div class="line"><span class="built_in">Number</span>([]) = <span class="number">0</span>;</div><div class="line"><span class="built_in">Number</span>(<span class="string">''</span>) = <span class="number">0</span>;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>parseInt(string, [radix])</p>
+<ul>
+<li>在面对字符串时，先忽略前面所有空格，再提取第一个字符是不是数字字符或者负号</li>
+<li>在转化为不同进制的时候，加上radix参数避免歧义<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">parseInt</span>(<span class="string">''</span>) = <span class="literal">NaN</span>; <span class="comment">// 没有能合法提取的</span></div><div class="line"><span class="built_in">parseInt</span>(<span class="string">'22.5'</span>) = <span class="number">22</span>;</div><div class="line"><span class="built_in">parseInt</span>(<span class="string">'123uuu'</span>) = <span class="number">123</span>;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h3><ul>
+<li>toString()函数<ul>
+<li>有toString()方法的是数值，布尔值，对象，字符串值</li>
+<li>num.toString(radix)可以按照某个基数转化为字符串，但只对数值有效</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">10</span>;</div><div class="line">num.toString(); <span class="comment">// '10'</span></div><div class="line">num.toString(<span class="number">2</span>); <span class="comment">// '1010'</span></div><div class="line">num.toString(<span class="number">8</span>); <span class="comment">// '12'</span></div><div class="line">num.toString(<span class="number">16</span>); <span class="comment">// 'a'</span></div></pre></td></tr></table></figure>
+<ul>
+<li>String()函数<ul>
+<li>如果值有toString()方法，则调用该方法并返回相应结果</li>
+<li>如果值是null，返回’null’</li>
+<li>如果值是undefined，返回’undefined’</li>
+</ul>
+</li>
+</ul>
+<h3 id="Object类型（＊）"><a href="#Object类型（＊）" class="headerlink" title="Object类型（＊）"></a>Object类型（＊）</h3><p><strong>Object的每个实例都具有下列属性和方法</strong></p>
+<ul>
+<li>constructor：保存着用于创建当前对象的函数</li>
+<li>hasOwnProperty(propertyName)：用于检查给定的属性在当前对象实例中（而不是在实例的原型中）是否存在</li>
+<li>isPrototypeOf(Object)：用于检查传入的对象是否是当前对象的原型</li>
+<li>propertyIsEnumerable(propertyName)：用于检查给定的属性是否能够使用for-in语句来枚举</li>
+<li>toLocaleString()：返回对象的字符串表示，该字符与执行环境的地区对应</li>
+<li>toString()：返回对象的字符串表示</li>
+<li>valueOf()：返回对象的字符串、数值或布尔值表示。通常与toString()方法的返回值相同</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://cooltag.com/2017/03/04/javascript高级程序设计（3-1）——-基本类型/" data-id="cizvaop7l0004a4wvoygpo6bb" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/03/04/javascript高级程序设计（3-2）——-操作符/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/04/javascript高级程序设计（2）——-HTML中使用js/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/04/BOM/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-2）-——-模仿块级作用域/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-1）——-递归、闭包/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-2）——-继承/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-1）——-理解对象、创建对象/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 cooltag<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

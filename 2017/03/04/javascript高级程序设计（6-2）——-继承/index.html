@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>cooltag的魔力小站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="javascript高级程序设计（6.2）—— 继承标签（空格分隔）：javascript 
+
+继承原型链123456789101112131415function SuperType()&amp;#123;    this.property = true;&amp;#125;SuperType.prototype.getSuperValue = function()&amp;#123;    return this.p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cooltag的魔力小站">
+<meta property="og:url" content="http://cooltag.com/2017/03/04/javascript高级程序设计（6-2）——-继承/index.html">
+<meta property="og:site_name" content="cooltag的魔力小站">
+<meta property="og:description" content="javascript高级程序设计（6.2）—— 继承标签（空格分隔）：javascript 
+
+继承原型链123456789101112131415function SuperType()&amp;#123;    this.property = true;&amp;#125;SuperType.prototype.getSuperValue = function()&amp;#123;    return this.p">
+<meta property="og:updated_time" content="2017-03-04T12:59:14.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cooltag的魔力小站">
+<meta name="twitter:description" content="javascript高级程序设计（6.2）—— 继承标签（空格分隔）：javascript 
+
+继承原型链123456789101112131415function SuperType()&amp;#123;    this.property = true;&amp;#125;SuperType.prototype.getSuperValue = function()&amp;#123;    return this.p">
+  
+    <link rel="alternate" href="/atom.xml" title="cooltag的魔力小站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cooltag的魔力小站</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://cooltag.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-javascript高级程序设计（6-2）——-继承" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/04/javascript高级程序设计（6-2）——-继承/" class="article-date">
+  <time datetime="2017-03-04T12:59:14.000Z" itemprop="datePublished">2017-03-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="javascript高级程序设计（6-2）——-继承"><a href="#javascript高级程序设计（6-2）——-继承" class="headerlink" title="javascript高级程序设计（6.2）—— 继承"></a>javascript高级程序设计（6.2）—— 继承</h1><p>标签（空格分隔）：javascript </p>
+<hr>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.property = <span class="literal">true</span>;</div><div class="line">&#125;</div><div class="line">SuperType.prototype.getSuperValue = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.property;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.subProperty = <span class="literal">false</span>;</div><div class="line">&#125;</div><div class="line">SubType.prototype = <span class="keyword">new</span> SuperType(); <span class="comment">// important!!</span></div><div class="line">SubType.prototype.getSubValue = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.subProperty;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> instance = <span class="keyword">new</span> SubType();</div><div class="line"><span class="built_in">console</span>.log(instance.getSuperValue()); <span class="comment">// true</span></div></pre></td></tr></table></figure>
+<h4 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h4><ul>
+<li>实现继承的基本方法是将子类的原型设置为父类原型的实例<ul>
+<li>子类原型的constructor不再指向子类的构造函数，因为原型被设置成了新的对象，当获取constructor的时候，获取到的是父类的构造函数</li>
+<li>子类的实例的调用方法，获取属性都会是<ol>
+<li>从实例中寻找</li>
+<li>从原型中寻找</li>
+<li>从原型的原型中寻找（因为子类的原型是父类的实例）</li>
+<li>依次直到最顶层的父类的原型</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>子类的实例使用instanceof操作符</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">instance <span class="keyword">instanceof</span> <span class="built_in">Object</span>; <span class="comment">//true</span></div><div class="line">instance <span class="keyword">instanceof</span> SuperType; <span class="comment">//true</span></div><div class="line">instance <span class="keyword">instanceof</span> SubType; <span class="comment">//true</span></div></pre></td></tr></table></figure>
+<ul>
+<li>先讲子类的原型设置为父类原型的实例，再给子类原型添加方法（赋值会让原型指向新的对象）</li>
+<li>也不能使用字面量给子类添加新的方法</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">SubType.prototype = <span class="keyword">new</span> SuperType();</div><div class="line">SubType.prototype = &#123; <span class="comment">// 这里的话指向的对象就不是父类的原型了，而是一个新的对象</span></div><div class="line">    getSubValue: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.subProperty;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><ul>
+<li>之前最好的创建对象的方法是组合使用构造函数模式和原型模式，思路是将实例属性放到构造函数中，方法放到原型中，但在纯原型链中会出问题</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.colors = [<span class="string">'red'</span>, <span class="string">'orange'</span>, <span class="string">'yellow'</span>];</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params"></span>)</span>&#123;&#125;</div><div class="line">SubType.prototype = <span class="keyword">new</span> SuperType();</div><div class="line"></div><div class="line"><span class="keyword">var</span> instance1 = <span class="keyword">new</span> SubType();</div><div class="line">instance1.colors.push(<span class="string">'black'</span>);</div><div class="line"><span class="built_in">console</span>.log(instance1.colors); <span class="comment">// "red,orange,yellow,black"</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> instance2 = <span class="keyword">new</span> SubType();</div><div class="line"><span class="built_in">console</span>.log(instance2.colors); <span class="comment">// "red,orange,yellow,black"</span></div></pre></td></tr></table></figure>
+<ul>
+<li>由于SubType的原型是SuperType的实例，所以SubType的原型中有colors这个属性，是个引用类型，会导致它的所有实例的colors属性共享</li>
+<li>创建子类型的实例时，不能向超类型的构造函数中传递参数</li>
+</ul>
+<h3 id="借用构造函数"><a href="#借用构造函数" class="headerlink" title="借用构造函数"></a>借用构造函数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.colors = [<span class="string">'red'</span>, <span class="string">'orange'</span>, <span class="string">'yellow'</span>];</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    SuperType.call(<span class="keyword">this</span>); <span class="comment">// important!!</span></div><div class="line">&#125;</div><div class="line">SubType.prototype = <span class="keyword">new</span> SuperType();</div><div class="line"></div><div class="line"><span class="keyword">var</span> instance1 = <span class="keyword">new</span> SubType();</div><div class="line">instance1.colors.push(<span class="string">'black'</span>);</div><div class="line"><span class="built_in">console</span>.log(instance1.colors); <span class="comment">// "red,orange,yellow,black"</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> instance2 = <span class="keyword">new</span> SubType();</div><div class="line"><span class="built_in">console</span>.log(instance2.colors); <span class="comment">// "red,orange,yellow"</span></div></pre></td></tr></table></figure>
+<h3 id="组合继承（最常用）"><a href="#组合继承（最常用）" class="headerlink" title="组合继承（最常用）"></a>组合继承（最常用）</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params">name</span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.colors = [<span class="string">'red'</span>, <span class="string">'orange'</span>, <span class="string">'yellow'</span>];</div><div class="line">&#125;</div><div class="line">SuperType.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params">name, age</span>)</span>&#123;</div><div class="line">    SuperType.call(<span class="keyword">this</span>, name);</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">&#125;</div><div class="line">SubType.prototype = <span class="keyword">new</span> SuperType();</div><div class="line">SubType.prototype.constructor = SubType;</div><div class="line">SubType.prototype.sayAge = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.age);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="原型式继承"><a href="#原型式继承" class="headerlink" title="原型式继承"></a>原型式继承</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">object</span>(<span class="params">o</span>)</span>&#123;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">F</span>(<span class="params"></span>)</span>&#123;&#125;</div><div class="line">    F.prototype = o;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> F();</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> person = &#123;</div><div class="line">    <span class="attr">name</span>: <span class="string">'cooltag'</span>,</div><div class="line">    <span class="attr">friends</span>: [<span class="string">'Nick'</span>, <span class="string">'Alice'</span>, <span class="string">'Fred'</span>]</div><div class="line">&#125;;</div><div class="line"><span class="keyword">var</span> anotherPerson = object(person);</div></pre></td></tr></table></figure>
+<ul>
+<li>类似于extend一个对象，不用去为了继承而去新建一个类型</li>
+<li>但是引用对象依然会共享</li>
+</ul>
+<h4 id="Object-create-vs-JQuery-extend"><a href="#Object-create-vs-JQuery-extend" class="headerlink" title="Object.create() vs. JQuery.extend()"></a>Object.create() vs. JQuery.extend()</h4><ul>
+<li>Object.create()是form一个对象的原型新建一个对象</li>
+<li>JQuery.extend()是一个对象的浅拷贝</li>
+</ul>
+<h3 id="寄生式继承"><a href="#寄生式继承" class="headerlink" title="寄生式继承"></a>寄生式继承</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">createAnother</span>(<span class="params">original</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> clone = <span class="built_in">Object</span>.create(original);</div><div class="line">    clone.sayHi = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(<span class="string">'Hi'</span>);</div><div class="line">    &#125;;</div><div class="line">    <span class="keyword">return</span> clone;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> person = &#123;</div><div class="line">    <span class="attr">name</span>: <span class="string">'cooltag'</span>,</div><div class="line">    <span class="attr">friends</span>: [<span class="string">'Nick'</span>, <span class="string">'Alice'</span>, <span class="string">'Fred'</span>]</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> anotherPerson = createAnother(person);</div></pre></td></tr></table></figure>
+<ul>
+<li>但实际上person和anotherPerson共享所有属性，当person的name改变时，antherPerson的name也将改变，除非anotherPerson自己重新定义name属性</li>
+</ul>
+<h3 id="寄生组合式继承（node中的util-inherits的实现方式）"><a href="#寄生组合式继承（node中的util-inherits的实现方式）" class="headerlink" title="寄生组合式继承（node中的util.inherits的实现方式）"></a>寄生组合式继承（node中的util.inherits的实现方式）</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">inheritPrototype</span>(<span class="params">subType, superType</span>)</span>&#123;</div><div class="line">    <span class="keyword">var</span> prototype = <span class="built_in">Object</span>.create(superType.prototype);</div><div class="line">    prototype.constructor = subType;</div><div class="line">    subType.prototype = prototype;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SuperType</span>(<span class="params">name</span>)</span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.colors = [<span class="string">'red'</span>, <span class="string">'orange'</span>, <span class="string">'yellow'</span>];</div><div class="line">&#125;</div><div class="line"></div><div class="line">SuperType.prototype.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">SubType</span>(<span class="params">name, age</span>)</span>&#123;</div><div class="line">    SuperType.call(<span class="keyword">this</span>, name);</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">&#125;</div><div class="line"></div><div class="line">inheritPrototype(SubType, SuperType);</div><div class="line"></div><div class="line">SubType.prototype.sayAge = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.age);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://cooltag.com/2017/03/04/javascript高级程序设计（6-2）——-继承/" data-id="cizvaop7y000ca4wv1pbrtxpz" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/03/04/javascript高级程序设计（7-1）——-递归、闭包/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/04/javascript高级程序设计（6-1）——-理解对象、创建对象/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/04/BOM/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-2）-——-模仿块级作用域/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-1）——-递归、闭包/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-2）——-继承/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-1）——-理解对象、创建对象/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 cooltag<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

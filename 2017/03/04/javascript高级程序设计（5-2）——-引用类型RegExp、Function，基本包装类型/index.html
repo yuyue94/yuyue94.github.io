@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>cooltag的魔力小站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="javascript高级程序设计（5.2）——  引用类型RegExp、Function，基本包装类型标签（空格分隔）：javascript 
+
+拾遗RegExp类型
+var expression = / pattern / flags
+
+匹配模式
+g：全局模式
+i：不区分大小写模式
+m：多行模式，在达到一行文本末尾时还会继续查找下一行中是否存在于模式匹配的项
+
+构造方法
+字面量方法
+1var e">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cooltag的魔力小站">
+<meta property="og:url" content="http://cooltag.com/2017/03/04/javascript高级程序设计（5-2）——-引用类型RegExp、Function，基本包装类型/index.html">
+<meta property="og:site_name" content="cooltag的魔力小站">
+<meta property="og:description" content="javascript高级程序设计（5.2）——  引用类型RegExp、Function，基本包装类型标签（空格分隔）：javascript 
+
+拾遗RegExp类型
+var expression = / pattern / flags
+
+匹配模式
+g：全局模式
+i：不区分大小写模式
+m：多行模式，在达到一行文本末尾时还会继续查找下一行中是否存在于模式匹配的项
+
+构造方法
+字面量方法
+1var e">
+<meta property="og:updated_time" content="2017-03-04T12:59:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cooltag的魔力小站">
+<meta name="twitter:description" content="javascript高级程序设计（5.2）——  引用类型RegExp、Function，基本包装类型标签（空格分隔）：javascript 
+
+拾遗RegExp类型
+var expression = / pattern / flags
+
+匹配模式
+g：全局模式
+i：不区分大小写模式
+m：多行模式，在达到一行文本末尾时还会继续查找下一行中是否存在于模式匹配的项
+
+构造方法
+字面量方法
+1var e">
+  
+    <link rel="alternate" href="/atom.xml" title="cooltag的魔力小站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cooltag的魔力小站</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://cooltag.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-javascript高级程序设计（5-2）——-引用类型RegExp、Function，基本包装类型" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/04/javascript高级程序设计（5-2）——-引用类型RegExp、Function，基本包装类型/" class="article-date">
+  <time datetime="2017-03-04T12:59:01.000Z" itemprop="datePublished">2017-03-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="javascript高级程序设计（5-2）——-引用类型RegExp、Function，基本包装类型"><a href="#javascript高级程序设计（5-2）——-引用类型RegExp、Function，基本包装类型" class="headerlink" title="javascript高级程序设计（5.2）——  引用类型RegExp、Function，基本包装类型"></a>javascript高级程序设计（5.2）——  引用类型RegExp、Function，基本包装类型</h1><p>标签（空格分隔）：javascript </p>
+<hr>
+<h2 id="拾遗"><a href="#拾遗" class="headerlink" title="拾遗"></a>拾遗</h2><h3 id="RegExp类型"><a href="#RegExp类型" class="headerlink" title="RegExp类型"></a>RegExp类型</h3><blockquote>
+<p>var expression = / pattern / flags</p>
+</blockquote>
+<h4 id="匹配模式"><a href="#匹配模式" class="headerlink" title="匹配模式"></a>匹配模式</h4><ul>
+<li>g：全局模式</li>
+<li>i：不区分大小写模式</li>
+<li>m：多行模式，在达到一行文本末尾时还会继续查找下一行中是否存在于模式匹配的项</li>
+</ul>
+<h4 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h4><ul>
+<li><p>字面量方法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> expression = <span class="regexp">/ pattern /</span> flags;</div></pre></td></tr></table></figure>
+</li>
+<li><p>构造函数方法，注意由于RegExp构造函数的模式参数是字符串，所以在某些情况下要对字符进行双重转义</p>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> pattern = <span class="keyword">new</span> <span class="built_in">RegExp</span>(regString, flagString)</div><div class="line"><span class="keyword">var</span> pattern1 = <span class="regexp">/\.at/g</span>;</div><div class="line"><span class="comment">// 与之等价的构造函数方法如下</span></div><div class="line"><span class="keyword">var</span> pattern2 = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'\\.at'</span>,<span class="string">'g'</span>);</div></pre></td></tr></table></figure>
+<h4 id="RegExp实例属性"><a href="#RegExp实例属性" class="headerlink" title="RegExp实例属性"></a>RegExp实例属性</h4><ul>
+<li>global：布尔值，是否设置了g标志</li>
+<li>ignoreCase：布尔值，是否设置了i标志</li>
+<li>multiline：布尔值，是否设置了m标志</li>
+<li>lastIndex：整数，表示开始搜索下个匹配项的字符位置，从0算起</li>
+<li>source：正则表达式的字符串表示，按照字面量形势的返回</li>
+</ul>
+<p><strong>特别注意</strong></p>
+<ul>
+<li>lastIndex属性只有带有g标志才会被设置，并且在多次使用test的时候可能会出错</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> re = <span class="regexp">/aaa/g</span>;</div><div class="line">re.test(<span class="string">'aaabbb'</span>); <span class="comment">// true，能找到aaa字符串，lastIndex设置为3</span></div><div class="line">re.test(<span class="string">'aaabbbccc'</span>); <span class="comment">// false，该实例这次从index为3位置开始找，没找到，返回false，lastIndex设置为0，下次test()才会正常</span></div></pre></td></tr></table></figure>
+<h4 id="RegExp实例方法"><a href="#RegExp实例方法" class="headerlink" title="RegExp实例方法"></a>RegExp实例方法</h4><h5 id="reg-exec-str-vs-str-match-reg"><a href="#reg-exec-str-vs-str-match-reg" class="headerlink" title="reg.exec(str) vs. str.match(reg)"></a>reg.exec(str) vs. str.match(reg)</h5><ul>
+<li>reg.exec()<ul>
+<li>不管有没有g标志，每次只返回一个捕获组的结果（捕获组表明可以匹配括号中的子模式），这个结果是个Array的实例，额外有两个属性：index和input</li>
+<li>有g标志<ul>
+<li>会设置reg的lastIndex属性，确定下次exec()的初始index</li>
+<li>执行到最后reg.exec()为null后，lastIndex重设置为0</li>
+</ul>
+</li>
+<li>没有g标志<ul>
+<li>只返回第一个捕获组的结果，lastIndex始终为0</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>str.match()<ul>
+<li>有g标志<ul>
+<li>直接返回所有匹配结果，匹配结果是个Array的实例，实例中不包含括号中的子模式结果，也没有额外的那两个属性</li>
+<li>lastIndex始终为0</li>
+</ul>
+</li>
+<li>没有g标志<ul>
+<li>和reg.exec()是相同的结果，会有捕获组的结果，结果是Array实例且实例中有index和input属性</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="reg-test-str-vs-str-search-reg"><a href="#reg-test-str-vs-str-search-reg" class="headerlink" title="reg.test(str) vs. str.search(reg)"></a>reg.test(str) vs. str.search(reg)</h5><ul>
+<li>reg.test()<ul>
+<li>确定目标字符串是否与该模式匹配，匹配返回true，不匹配返回false</li>
+<li>一般字符串会作为用户的输入，而正则表达式一般是静态放在代码中，所以这样是不用先验证用户的输入合法性的，因为reg.test(null)或者reg.test(undefined)是直接返回false</li>
+</ul>
+</li>
+<li>str.search()<ul>
+<li>如果模式匹配，返回匹配的第一个字符串第一个字符的index，不匹配则返回-1</li>
+<li>一般字符串若作为用户输入要先验证输入的合法性，因为只有字符串才有search方法，否则会报“找不到方法”的错误</li>
+</ul>
+</li>
+</ul>
+<h4 id="RegExp从Object继承的方法"><a href="#RegExp从Object继承的方法" class="headerlink" title="RegExp从Object继承的方法"></a>RegExp从Object继承的方法</h4><ul>
+<li>toString()和toLocaleString()返回正则表达式的字面量</li>
+<li>valueOf()方法返回正则表达式实例本生</li>
+</ul>
+<h3 id="RegExp构造函数属性（不常用）"><a href="#RegExp构造函数属性（不常用）" class="headerlink" title="RegExp构造函数属性（不常用）"></a>RegExp构造函数属性（不常用）</h3><ul>
+<li>RegExp.input<ul>
+<li>最近一次匹配的字符串 </li>
+<li>Opera浏览器没有此属性</li>
+</ul>
+</li>
+<li>RegExp.leftContext<ul>
+<li>lastMatch之前的文本 </li>
+</ul>
+</li>
+<li>RegExp.rightContext<ul>
+<li>lastMatch之后的文本 </li>
+</ul>
+</li>
+<li>RegExp.lastMatch<ul>
+<li>最近一次的匹配项 </li>
+<li>Opera浏览器没有此属性</li>
+</ul>
+</li>
+<li>RegExp.lastParen<ul>
+<li>最近一次匹配的捕获组 </li>
+<li>Opera浏览器没有此属性</li>
+</ul>
+</li>
+<li>RegExp.multiline<ul>
+<li>是否所有表达式都使用了多行模式 </li>
+<li>Opera和IE浏览器没有此属性</li>
+</ul>
+</li>
+</ul>
+<h3 id="Function类型"><a href="#Function类型" class="headerlink" title="Function类型"></a>Function类型</h3><h4 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h4><ul>
+<li>函数也是引用类型Function的实例，也是对象，因此函数名实际是一个指向函数对象的指针</li>
+<li>函数声明和函数表达式区别在于：由于解析器会先读取函数声明，所以函数声明可以放在函数调用的下面，但是函数表达式创建的函数必须先声明后调用</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 函数声明</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> num1 + num2;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 函数表达式</span></div><div class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> num1 + num2;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>函数可以作为参数传递</li>
+</ul>
+<h4 id="函数的内部属性"><a href="#函数的内部属性" class="headerlink" title="函数的内部属性"></a>函数的内部属性</h4><ul>
+<li>arguments<ul>
+<li>array-like object，是个Object实例，不是Array的实例</li>
+<li>arguments的callee属性是当前的函数</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 求阶乘函数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">factorial</span>(<span class="params">num</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span> (num &lt;= <span class="number">1</span>)&#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> num * factorial(num<span class="number">-1</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> newFactorial = factorial;</div><div class="line">factorial = <span class="literal">null</span>;</div><div class="line">newFactorial(); <span class="comment">// 会报错，代码中的factorial已经指向null对象</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">factorial</span>(<span class="params">num</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span> (num &lt;= <span class="number">1</span>)&#123;</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="keyword">return</span> num * <span class="built_in">arguments</span>.callee(num<span class="number">-1</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>this<ul>
+<li>引用的是函数据以执行的环境对象</li>
+</ul>
+</li>
+</ul>
+<h4 id="函数对象的属性和方法"><a href="#函数对象的属性和方法" class="headerlink" title="函数对象的属性和方法"></a>函数对象的属性和方法</h4><ul>
+<li>caller（最好不使用该属性）<ul>
+<li>保存着调用当前函数的函数的引用，如果是在全局作用域中调用当前函数，则为null </li>
+</ul>
+</li>
+<li>length<ul>
+<li>函数希望接受的命名参数的个数</li>
+</ul>
+</li>
+<li>toString()，toLocaleString()<ul>
+<li>返回函数的代码 </li>
+</ul>
+</li>
+<li>valueOf()<ul>
+<li>返回函数本身</li>
+</ul>
+</li>
+<li>apply()，call()，bind()<ul>
+<li>第一个参数都是运行函数的作用域，确定this指向谁</li>
+<li>apply函数的第二个参数为要调用该方法的参数的list</li>
+<li>call函数中要调用该方法的参数依次列出</li>
+<li>bind函数会返回一个绑定this后的新函数</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> num1 + num2;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum1</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> sum.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum2</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> sum.apply(<span class="keyword">this</span>, [num1, num2]);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">callSum3</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> sum.call(<span class="keyword">this</span>, num1, num2);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="基本包装类型"><a href="#基本包装类型" class="headerlink" title="基本包装类型"></a>基本包装类型</h3><ul>
+<li>基本包装类型有三种特殊的引用类型：Number，Boolean，String</li>
+<li>每当读取一个基本类型值的时候，后台会创建一个对应的基本包装类型的对象，从而我们才能调用一些方法来操作这些数</li>
+<li>去读取一个字符串时，后台自动完成<ol>
+<li>创建String类型的一个实例</li>
+<li>在实例上调用指定的方法</li>
+<li>销毁这个实例</li>
+</ol>
+</li>
+<li>引用类型与基本包装类型主要区别就是对象的生存期</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> s1 = <span class="string">'some text'</span>;</div><div class="line">s1.color = <span class="string">'red'</span>;</div><div class="line">alert(s1.color); <span class="comment">// undefined</span></div></pre></td></tr></table></figure>
+<ul>
+<li>第二行试图给s1添加一个color属性<ol>
+<li>那么后台先创建了一个String类型的实例</li>
+<li>然后添加了一个color属性</li>
+<li>但是在执行第三行时，已经将这个实例销毁</li>
+<li>在调用s1.color的时候，又创建了自己的String对象，但该对象没有color属性</li>
+</ol>
+</li>
+<li>对基本包装类型实例调用typeof会返回’object’                              <h4 id="Boolean类型"><a href="#Boolean类型" class="headerlink" title="Boolean类型"></a>Boolean类型</h4><h4 id="Number类型"><a href="#Number类型" class="headerlink" title="Number类型"></a>Number类型</h4></li>
+<li>toString([radix])，可以传递一个进制数来将该数字转化为该进制的数</li>
+<li>toFixed([digits])，决定四舍五入到多少个小数位来转化为字符串，digits范围0到20，默认为0</li>
+<li>toExponential([fractionDigits])，先转化为科学技术法，对前面带小数位的进行四舍五入，fractionDigits范围0到20，默认足够显示所有位数（其实不尽然，当位数很多的时候也会出问题）</li>
+<li>toPrecision([precision])，指希望用precision位数字来表示这个数precision范围1到21，默认足够显示所有位数</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">99</span>;</div><div class="line">num.toPrecition(<span class="number">1</span>); <span class="comment">// "1e+2" 因为只能用一位来表示，所以用指数表示法，并且四舍五入</span></div><div class="line">num.toPrecition(<span class="number">2</span>); <span class="comment">// "99"</span></div><div class="line">num.toPrecition(<span class="number">3</span>); <span class="comment">// "99.0"</span></div></pre></td></tr></table></figure>
+<h4 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h4><h5 id="字符方法"><a href="#字符方法" class="headerlink" title="字符方法"></a>字符方法</h5><ul>
+<li>charAt()，以单字符字符串形式返回给定位置的字符</li>
+<li>charCodeAt()，获取到的是该位置字符的编码，是个数字</li>
+<li>str[i]，同charAt()－－[es5]</li>
+</ul>
+<h4 id="字符串操作方法"><a href="#字符串操作方法" class="headerlink" title="字符串操作方法"></a>字符串操作方法</h4><ul>
+<li>concat()，拼接字符串，生成的是新的字符串，最好还是用”+”号</li>
+<li>slice(beginSlice[, endSlice])<ul>
+<li>保证end要比begin大，所以当endSlice为负数的时候，会加上字符串长度数（理解为倒数第end个） </li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'123456'</span>;</div><div class="line">str.slice(<span class="number">2</span>,<span class="number">3</span>); <span class="comment">// '3' 范围是左闭右开的，不包括endSlice位置的数</span></div></pre></td></tr></table></figure>
+<ul>
+<li>substr(start [, length])<ul>
+<li>从start开始处取length个字符组成的字符串，小于0时取倒着数的</li>
+<li>length小于0是自动变为0</li>
+</ul>
+</li>
+<li>substring(indexStart[, indexEnd])<ul>
+<li>不用保证end比start大，所有负值参数会变为0</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'123456'</span>;</div><div class="line">str.substring(<span class="number">2</span>,<span class="number">-1</span>); <span class="comment">// '12' 遇到负数end先置为0，范围是左闭右开的，不包括大的位置的数</span></div></pre></td></tr></table></figure>
+<h4 id="字符串位置方法"><a href="#字符串位置方法" class="headerlink" title="字符串位置方法"></a>字符串位置方法</h4><ul>
+<li>indexOf()</li>
+<li>lastIndexOf()</li>
+</ul>
+<h4 id="trim-方法"><a href="#trim-方法" class="headerlink" title="trim()方法"></a>trim()方法</h4><h4 id="字符串大小写转换方法"><a href="#字符串大小写转换方法" class="headerlink" title="字符串大小写转换方法"></a>字符串大小写转换方法</h4><ul>
+<li>toUpperCase()</li>
+<li>toLocaleUpperCase()</li>
+<li>toLowerCase()</li>
+<li>toLocaleLowerCase()</li>
+</ul>
+<h4 id="字符串的模式匹配方法"><a href="#字符串的模式匹配方法" class="headerlink" title="字符串的模式匹配方法"></a>字符串的模式匹配方法</h4><ul>
+<li>match()</li>
+<li>search()</li>
+<li>replace()<ul>
+<li>replace()创建一个替换后的新的字符串，不影响原字符串</li>
+<li>第一个参数如果是字符串，那么只替换第一个匹配的字串</li>
+<li>第一个参数如果是正则表达式，而且带有g标志，那么参看示例，会替换所有查找到的子串</li>
+<li>第二个参数如果是字符串，那么作为替换的子串</li>
+<li>第二个参数如果是个回调函数，那么参照示例</li>
+<li>replace函数很复杂，参看<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace" target="_blank" rel="external">replace()</a></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str = <span class="string">'cat, bat, sat, fat'</span>;</div><div class="line">str.replace(<span class="regexp">/(.at)/g</span>, <span class="string">'word ($1)'</span>);</div><div class="line"><span class="built_in">console</span>.log(str); <span class="comment">// word(cat), word(bat), word(sat), word(fat)</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">escapeHTML</span>(<span class="params">str</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> str.replace(<span class="regexp">/[&lt;&gt;"&amp;]/g</span>, <span class="function"><span class="keyword">function</span>(<span class="params">match,offset,s</span>)</span>&#123;</div><div class="line">        <span class="keyword">switch</span> (match)&#123;</div><div class="line">            <span class="keyword">case</span> <span class="string">'&lt;'</span>: <span class="keyword">return</span> <span class="string">'&amp;lt;'</span>;</div><div class="line">            <span class="keyword">case</span> <span class="string">'&gt;'</span>: <span class="keyword">return</span> <span class="string">'&amp;gt;'</span>;</div><div class="line">            <span class="keyword">case</span> <span class="string">'\"'</span>: <span class="keyword">return</span> <span class="string">'&amp;quot;'</span>;</div><div class="line">            <span class="keyword">case</span> <span class="string">'&amp;'</span>: <span class="keyword">return</span> <span class="string">'&amp;amp'</span></div><div class="line">        &#125;</div><div class="line">    &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>split()<ul>
+<li>第一个参数可以是字符串或者正则表达式，返回一个数组</li>
+<li>第二个参数可以指定数组长度的最大值</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var str = &apos;red,blue,green,yellow&apos;;</div><div class="line">str.split(&apos;,&apos;, 2); //[&apos;red&apos;,&apos;blue&apos;]</div></pre></td></tr></table></figure>
+<ul>
+<li><p>localeCompare()</p>
+<ul>
+<li>比如str1.localeCompare(str2); </li>
+<li>如果字符串在字母表中应该排在字符串参数之前，则返回一个负数，一般是－1（可以理解为，str1 &gt; str2的结果为false）</li>
+<li>如果字符串相等则返回0</li>
+<li>如果字符串在字母表中应该排在字符串参数之后，则返回一个正数，一般是1（可以理解为，str1 &gt; str2的结果为true）</li>
+</ul>
+</li>
+<li><p>String.fromCharCode()</p>
+<ul>
+<li>接收一个或者多个字符编码，然后将它们转换成一个字符串</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">String</span>.fromCharCode(<span class="number">104</span>, <span class="number">101</span>, <span class="number">108</span>, <span class="number">108</span>, <span class="number">111</span>); <span class="comment">// "hello"</span></div></pre></td></tr></table></figure>
+<h3 id="单体内置对象"><a href="#单体内置对象" class="headerlink" title="单体内置对象"></a>单体内置对象</h3><blockquote>
+<p>由ECMAScript实现提供的、不依赖于宿主环境的对象，这些对象在ECMAScript程序执行之前就已经存在了<br>两个单体内置对象：Global，Math</p>
+</blockquote>
+<h4 id="Global对象"><a href="#Global对象" class="headerlink" title="Global对象"></a>Global对象</h4><h5 id="URI编码方法"><a href="#URI编码方法" class="headerlink" title="URI编码方法"></a>URI编码方法</h5><ul>
+<li>RFC-2396中对于URI中的字符分类 <ul>
+<li>保留字符（reserved characters）：这类字符是URI中的保留关键字符，它们用于分割URI中的各个部分。这些字符是：”;” | “/“ | “?” | “:” | “@” | “&amp;” | “=” | “+” | “$” | “,” </li>
+<li>Mark字符（mark characters）：这类字符在RFC-2396中特别定义，但是没有特别说明用途，可能是和别的RFC标准相关。 这些字符是：”-“ | “_” | “.” | “!” | “~” | “*” | “‘“ | “(“ | “)” </li>
+<li>基本字符（alphanum characters）：这类字符是URI中的主体部分，它包括所有的大写字母、小写字母和数字 </li>
+</ul>
+</li>
+<li>encodeURI()和encodeURIComponent()<ul>
+<li>encodeURI: 该函数对传入字符串中的所有非（基本字符、Mark字符和保留字符）进行转义编码（escaping）。所有的需要转义的字符都按照UTF-8编码转化成为一个、两个或者三个字节的十六进制转义字符（％xx）。例如，字符空格” “转换成为”%20”。</li>
+<li>encodeURIComponent: 该函数处理方式和encodeURI只有一个不同点，那就是对于保留字符同样做转义编码。例如，字符”:”被转义字符”%3A”代替 </li>
+<li>比如对于：<a href="http://www.mysite.com/send-to-friend.aspx?url=http://www.mysite.com/product.html会出错，因为无法按照URI格式化（后面也有://字符，而这部分需要被转义），应该变为：http://www.mysite.com/send-to-friend.aspx?url=http%3A%2F%2Fwww.mysite.com%2Fproduct.html" target="_blank" rel="external">http://www.mysite.com/send-to-friend.aspx?url=http://www.mysite.com/product.html会出错，因为无法按照URI格式化（后面也有://字符，而这部分需要被转义），应该变为：http://www.mysite.com/send-to-friend.aspx?url=http%3A%2F%2Fwww.mysite.com%2Fproduct.html</a> </li>
+<li>使用场景比较：如果你需要替换的是整个uri，那么使用encodeURI，如果你只是要替换部分uri，要将这个字符串作为一个uri后面的参数，那么使用encodeURIComponent</li>
+</ul>
+</li>
+</ul>
+<h5 id="eval-方法"><a href="#eval-方法" class="headerlink" title="eval()方法"></a>eval()方法</h5><h5 id="window对象"><a href="#window对象" class="headerlink" title="window对象"></a>window对象</h5><ul>
+<li>所有在全局作用域中声明的变量和函数，都成为了window对象的属性</li>
+</ul>
+<h4 id="Math对象"><a href="#Math对象" class="headerlink" title="Math对象"></a>Math对象</h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://cooltag.com/2017/03/04/javascript高级程序设计（5-2）——-引用类型RegExp、Function，基本包装类型/" data-id="cizvaop7u000aa4wvtjol3dxm" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/03/04/javascript高级程序设计（6-1）——-理解对象、创建对象/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/04/javascript高级程序设计（5-1）——-引用类型Array、Date/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/04/BOM/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-2）-——-模仿块级作用域/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-1）——-递归、闭包/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-2）——-继承/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-1）——-理解对象、创建对象/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 cooltag<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

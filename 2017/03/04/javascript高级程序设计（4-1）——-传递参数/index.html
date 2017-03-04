@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>cooltag的魔力小站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="javascript高级程序设计（4.1）—— 传递参数标签（空格分隔）：javascript 
+
+拾遗基本类型和引用类型的值
+基本类型有5种：Undefined、Null、Boolean、Number、String
+引用类型：Object
+
+传递参数
+参数的传递在ECMAScript中永远是按照值传递，不存在按照引用传递
+在传递对象时，由于局部变量复制的是传递过来的对象的引用（但这个引用依然是值">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cooltag的魔力小站">
+<meta property="og:url" content="http://cooltag.com/2017/03/04/javascript高级程序设计（4-1）——-传递参数/index.html">
+<meta property="og:site_name" content="cooltag的魔力小站">
+<meta property="og:description" content="javascript高级程序设计（4.1）—— 传递参数标签（空格分隔）：javascript 
+
+拾遗基本类型和引用类型的值
+基本类型有5种：Undefined、Null、Boolean、Number、String
+引用类型：Object
+
+传递参数
+参数的传递在ECMAScript中永远是按照值传递，不存在按照引用传递
+在传递对象时，由于局部变量复制的是传递过来的对象的引用（但这个引用依然是值">
+<meta property="og:updated_time" content="2017-03-04T12:58:41.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cooltag的魔力小站">
+<meta name="twitter:description" content="javascript高级程序设计（4.1）—— 传递参数标签（空格分隔）：javascript 
+
+拾遗基本类型和引用类型的值
+基本类型有5种：Undefined、Null、Boolean、Number、String
+引用类型：Object
+
+传递参数
+参数的传递在ECMAScript中永远是按照值传递，不存在按照引用传递
+在传递对象时，由于局部变量复制的是传递过来的对象的引用（但这个引用依然是值">
+  
+    <link rel="alternate" href="/atom.xml" title="cooltag的魔力小站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cooltag的魔力小站</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://cooltag.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-javascript高级程序设计（4-1）——-传递参数" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/04/javascript高级程序设计（4-1）——-传递参数/" class="article-date">
+  <time datetime="2017-03-04T12:58:41.000Z" itemprop="datePublished">2017-03-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="javascript高级程序设计（4-1）——-传递参数"><a href="#javascript高级程序设计（4-1）——-传递参数" class="headerlink" title="javascript高级程序设计（4.1）—— 传递参数"></a>javascript高级程序设计（4.1）—— 传递参数</h1><p>标签（空格分隔）：javascript </p>
+<hr>
+<h2 id="拾遗"><a href="#拾遗" class="headerlink" title="拾遗"></a>拾遗</h2><h3 id="基本类型和引用类型的值"><a href="#基本类型和引用类型的值" class="headerlink" title="基本类型和引用类型的值"></a>基本类型和引用类型的值</h3><ul>
+<li>基本类型有5种：Undefined、Null、Boolean、Number、String</li>
+<li>引用类型：Object</li>
+</ul>
+<h4 id="传递参数"><a href="#传递参数" class="headerlink" title="传递参数"></a>传递参数</h4><ul>
+<li>参数的传递在ECMAScript中永远是按照值传递，不存在按照引用传递</li>
+<li>在传递对象时，由于局部变量复制的是传递过来的对象的引用（但这个引用依然是值传递，下面代码来验证），所以在函数内对对象的新属性赋值，对外部依然有效。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// code 1</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">addTen</span>(<span class="params">num</span>)</span>&#123;</div><div class="line">    nun += <span class="number">10</span>;</div><div class="line">    <span class="keyword">return</span> num;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> count = <span class="number">20</span>;</div><div class="line"><span class="keyword">var</span> result = addTen(count); <span class="comment">// count依然为20，result为30</span></div><div class="line"></div><div class="line"><span class="comment">// code 2</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setName</span>(<span class="params">obj</span>)</span>&#123;</div><div class="line">    <span class="comment">// 执行时obj和person指向同一个对象，所以obj.name直接操作对象，使得用person获取name属性也有效</span></div><div class="line">    obj.name = <span class="string">'Nick'</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">setName(person);</div><div class="line"><span class="built_in">console</span>.log(person.name);  <span class="comment">// "Nick"</span></div><div class="line"></div><div class="line"><span class="comment">// code 3</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">setName</span>(<span class="params">obj</span>)</span>&#123;</div><div class="line">    <span class="comment">// 如果是按照引用传递，当obj变成新Object并且设置属性name为'Greg'后，person按理说它的属性name也为'Greg'了，但是依然是'Nick'</span></div><div class="line">    <span class="comment">// 说明了是按照值传递，而且obj这个局部变量变成了新的Object对象，将在函数结束后被立即销毁</span></div><div class="line">    obj.name = <span class="string">'Nick'</span>;</div><div class="line">    obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">    obj.name = <span class="string">'Greg'</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> <span class="built_in">Object</span>();</div><div class="line">setName(person);</div><div class="line"><span class="built_in">console</span>.log(person.name); <span class="comment">// "Nick"</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="检查类型"><a href="#检查类型" class="headerlink" title="检查类型"></a>检查类型</h4><ul>
+<li>检测基本类型用typeof即可搞定，但是检测引用类型用处不大</li>
+<li>typeof一个函数（类）返回”function”，typeof一个对象返回”object”</li>
+<li>RegExp是个类，typeof返回”function”，/^aaa/是个正则对象，typeof返回”object”（在某些浏览器的早起版本，由于正则对象实现了[[call]]方法，使得typeof正则对象返回”function”，现在可以不予考虑）</li>
+<li>检测引用类型使用instanceof操作符，如果变量是给定引用类型的实例，那么instanceof会返回true</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://cooltag.com/2017/03/04/javascript高级程序设计（4-1）——-传递参数/" data-id="cizvaop7q0006a4wvoe7u9erg" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/03/04/javascript高级程序设计（4-2）——-执行环境、作用域、垃圾回收/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/04/javascript高级程序设计（3-3）——-语句、函数/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/04/BOM/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-2）-——-模仿块级作用域/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-1）——-递归、闭包/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-2）——-继承/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-1）——-理解对象、创建对象/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 cooltag<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

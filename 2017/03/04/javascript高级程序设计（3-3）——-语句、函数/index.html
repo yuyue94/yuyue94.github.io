@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>cooltag的魔力小站</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="javascript高级程序设计（3.3）—— 语句、函数标签（空格分隔）：javascript 
+
+拾遗语句if语句
+if(condition)其实会自动调用Boolean()函数来转化判断真值
+12[] == false; // trueif ([])&amp;#123; console.log(&apos;it is in&apos;) &amp;#125; // 条件为真
+
+情况1：关系操作符==，当不为Number型时，自">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cooltag的魔力小站">
+<meta property="og:url" content="http://cooltag.com/2017/03/04/javascript高级程序设计（3-3）——-语句、函数/index.html">
+<meta property="og:site_name" content="cooltag的魔力小站">
+<meta property="og:description" content="javascript高级程序设计（3.3）—— 语句、函数标签（空格分隔）：javascript 
+
+拾遗语句if语句
+if(condition)其实会自动调用Boolean()函数来转化判断真值
+12[] == false; // trueif ([])&amp;#123; console.log(&apos;it is in&apos;) &amp;#125; // 条件为真
+
+情况1：关系操作符==，当不为Number型时，自">
+<meta property="og:updated_time" content="2017-03-04T12:58:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cooltag的魔力小站">
+<meta name="twitter:description" content="javascript高级程序设计（3.3）—— 语句、函数标签（空格分隔）：javascript 
+
+拾遗语句if语句
+if(condition)其实会自动调用Boolean()函数来转化判断真值
+12[] == false; // trueif ([])&amp;#123; console.log(&apos;it is in&apos;) &amp;#125; // 条件为真
+
+情况1：关系操作符==，当不为Number型时，自">
+  
+    <link rel="alternate" href="/atom.xml" title="cooltag的魔力小站" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cooltag的魔力小站</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://cooltag.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-javascript高级程序设计（3-3）——-语句、函数" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/04/javascript高级程序设计（3-3）——-语句、函数/" class="article-date">
+  <time datetime="2017-03-04T12:58:34.000Z" itemprop="datePublished">2017-03-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="javascript高级程序设计（3-3）——-语句、函数"><a href="#javascript高级程序设计（3-3）——-语句、函数" class="headerlink" title="javascript高级程序设计（3.3）—— 语句、函数"></a>javascript高级程序设计（3.3）—— 语句、函数</h1><p>标签（空格分隔）：javascript </p>
+<hr>
+<h2 id="拾遗"><a href="#拾遗" class="headerlink" title="拾遗"></a>拾遗</h2><h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><h4 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h4><ul>
+<li><p>if(condition)其实会自动调用Boolean()函数来转化判断真值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[] == <span class="literal">false</span>; <span class="comment">// true</span></div><div class="line"><span class="keyword">if</span> ([])&#123; <span class="built_in">console</span>.log(<span class="string">'it is in'</span>) &#125; <span class="comment">// 条件为真</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>情况1：关系操作符==，当不为Number型时，自动调用Number()函数转换，Numer([])为0，Number(false)为0，关系值为true</p>
+</li>
+<li>情况2：无关系操作符，直接Boolean([])为true</li>
+</ul>
+<h4 id="for-in语句"><a href="#for-in语句" class="headerlink" title="for-in语句"></a>for-in语句</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (property <span class="keyword">in</span> expression) statement</div></pre></td></tr></table></figure>
+<h4 id="with语句（不建议使用）"><a href="#with语句（不建议使用）" class="headerlink" title="with语句（不建议使用）"></a>with语句（不建议使用）</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">with</span>(location)&#123;</div><div class="line">    <span class="keyword">var</span> hostName = hostname; <span class="comment">// 视为location.hostname</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="理解参数"><a href="#理解参数" class="headerlink" title="理解参数"></a>理解参数</h4><ul>
+<li><p>不管函数定义中是否有参数设置，你调用函数传入的值都会被存在arguments这个array-like object中，它是object不是list，所以要使用array的各种方法，可以使用如下的语句</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[].forEach.call(<span class="built_in">arguments</span>, <span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;&#125;);</div><div class="line"><span class="comment">// or...</span></div><div class="line"><span class="built_in">Array</span>.prototype.forEach.call(<span class="built_in">arguments</span>, <span class="function"><span class="keyword">function</span>(<span class="params">v</span>)</span>&#123;&#125;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>arguments里面的值永远与对应命名参数的值保持一致。前提是该值确实传入（arguments的length由传入参数的个数决定），<strong>两者内存空间却是独立的，但值会同步</strong></p>
+</li>
+<li>严格模式下arguments的值不能被改变<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doAdd</span>(<span class="params">num1, num2</span>)</span>&#123;</div><div class="line">    <span class="built_in">arguments</span>[<span class="number">1</span>] = <span class="number">10</span>; <span class="comment">// num2这时也发生了改变（如果传了num2）</span></div><div class="line">    <span class="built_in">console</span>.log(<span class="built_in">arguments</span>[<span class="number">0</span>] + num2);</div><div class="line">&#125;</div><div class="line"><span class="comment">// doAdd(10,100); 输出结果为20;</span></div><div class="line"><span class="comment">// doAdd(10); 输出结果为NaN，num2不与arguments[1]相关联，依然为undefined</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="没有重载"><a href="#没有重载" class="headerlink" title="没有重载"></a>没有重载</h4><ul>
+<li>函数名唯一标志了一个函数，不像java中可以根据不同参数重载函数，函数名属于后定义的函数（如果函数名相同）</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://cooltag.com/2017/03/04/javascript高级程序设计（3-3）——-语句、函数/" data-id="cizvaop7p0005a4wvw5aqwanm" class="article-share-link">Partager</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/03/04/javascript高级程序设计（4-1）——-传递参数/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Récent</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/03/04/javascript高级程序设计（3-2）——-操作符/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Articles récents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/03/04/BOM/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-2）-——-模仿块级作用域/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（7-1）——-递归、闭包/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-2）——-继承/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2017/03/04/javascript高级程序设计（6-1）——-理解对象、创建对象/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 cooltag<br>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
